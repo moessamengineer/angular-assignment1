@@ -1,0 +1,65 @@
+<div class="container py-5">
+    <h1 class="text-dark text-center fw-bolder about-title">PORTFOLIO COMPONENT</h1>
+    <div class="row g-3 gx-5">
+      <div class="card col-4 img-fluid">
+        <img src="../../assets/poert1.png" alt="" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <div class="overlay">
+          <span class="plus-sign">+</span>
+        </div>
+      </div>
+      <div class="card col-4 img-fluid">
+        <img src="../../assets/port2.png" alt="" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <div class="overlay">
+          <span class="plus-sign">+</span>
+        </div>
+      </div>
+      <div class="card col-4 img-fluid">
+        <img src="../../assets/port3.png" alt="" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <div class="overlay">
+          <span class="plus-sign">+</span>
+        </div>
+      </div>
+      <div class="card col-4 img-fluid">
+        <img src="../../assets/poert1.png" alt="" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <div class="overlay">
+          <span class="plus-sign">+</span>
+        </div>
+      </div>
+      <div class="card col-4 img-fluid">
+        <img src="../../assets/port2.png" alt="" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <div class="overlay">
+          <span class="plus-sign">+</span>
+        </div>
+      </div>
+      <div class="card col-4 img-fluid">
+        <img src="../../assets/port3.png" alt="" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <div class="overlay">
+          <span class="plus-sign">+</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img id="imageModalImage" src="" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const images = document.querySelectorAll('.img-thumbnail');
+    const modalImage = document.getElementById('imageModalImage');
+
+images.forEach((image) => {
+  image.addEventListener('click', () => {
+    modalImage.src = image.src;
+  });
+});
+  </script>
